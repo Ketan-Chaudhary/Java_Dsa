@@ -5,7 +5,8 @@ import java.util.ArrayList;
 public class DiceWays {
     public static void main(String[] args){
 //    ways("",4);
-        System.out.println(diceList("",4));
+//        System.out.println(diceList("",4));
+        diceFaces("",4,8);
     }
     static void ways(String p, int target){
         if (target==0){
@@ -28,5 +29,15 @@ public class DiceWays {
             ans.addAll(diceList(p+i,target-i));
         }
         return ans;
+    }
+
+    static void diceFaces(String p, int target, int faces){
+        if (target==0){
+            System.out.println(p);
+            return;
+        }
+        for (int i = 1; i <=faces&&i<=target ; i++) {
+            diceFaces(p+i,target-i,faces);
+        }
     }
 }
