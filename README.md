@@ -7,9 +7,6 @@ This repository contains implementations of various data structures and algorith
 1. [**Introduction**](#introduction)
 2. [**Data Structures**](#data-structures)
 3. [**Algorithms**](#algorithms)
-4. [**How to Use**](#how-to-use)
-5. [**Contributing**](#contributing)
-6. [**License**](#license)
 
 ## **Introduction** 🚀
 
