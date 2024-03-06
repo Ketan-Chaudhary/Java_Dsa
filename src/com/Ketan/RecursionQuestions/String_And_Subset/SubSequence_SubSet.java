@@ -18,7 +18,7 @@ public class SubSequence_SubSet {
         subSeq(p,up.substring(1));
     }
 
-    static ArrayList seqArray(String p, String up){
+    static ArrayList<String> seqArray(String p, String up){
         if (up.isEmpty()){
             ArrayList<String> list = new ArrayList<>();
             list.add(p);
