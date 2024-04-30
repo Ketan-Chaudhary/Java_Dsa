@@ -1,4 +1,4 @@
-package com.Basics.RecursionQuestions.String_And_Subset.Mazes;
+package com.Basics.RecursionQuestions.Backtracking.Mazes;
 
 import java.util.Arrays;
 

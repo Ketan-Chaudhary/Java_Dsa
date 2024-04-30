@@ -1,4 +1,4 @@
-package com.Basics.RecursionQuestions.String_And_Subset.Mazes;
+package com.Basics.RecursionQuestions.Backtracking.Mazes;
 
 public class MazeWithObstacles {
     public static void main(String[] args) {
