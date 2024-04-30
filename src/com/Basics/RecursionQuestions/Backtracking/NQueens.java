@@ -1,6 +1,6 @@
 package com.Basics.RecursionQuestions.Backtracking;
 
-public class Nqueens {
+public class NQueens {
     public static void main(String[] args){
         int n = 4;
         boolean[][] board = new boolean[n][n];
