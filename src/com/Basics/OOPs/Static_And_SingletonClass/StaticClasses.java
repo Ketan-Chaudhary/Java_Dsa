@@ -1,4 +1,4 @@
-package com.Basics.OOPs.Static;
+package com.Basics.OOPs.Static_And_SingletonClass;
 
 public class StaticClasses {
     public static void main(String[] args) {
