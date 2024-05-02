@@ -27,7 +27,7 @@ public class Basics {
         // Creating objects(instances of) class
         Student ketan= new Student();
         System.out.println(ketan.name);
-
+        
     }
 
 }
