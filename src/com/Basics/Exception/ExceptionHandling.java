@@ -5,8 +5,13 @@ public class ExceptionHandling {
         int a=5;
         int b=0;
         try{
-            divide(a,b);
+//            divide(a,b);
 //            int c= a/b;
+            String name= "ketan";
+            if (name.equals("ketan")){
+                throw  new CustomException("my name is Ketan");
+            }} catch (CustomException e){
+            System.out.println(e.getMessage());
         } catch (ArithmeticException e){
             System.out.println(e.getMessage());
             // more strict exception should place first
@@ -15,6 +20,7 @@ public class ExceptionHandling {
             System.out.println("Other exception handle here");
         } finally {
             System.out.println("Runs in every case");
+            // only one finally can be created
         }
     }
 
