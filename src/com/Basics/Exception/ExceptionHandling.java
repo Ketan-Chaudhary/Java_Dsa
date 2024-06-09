@@ -9,6 +9,10 @@ public class ExceptionHandling {
 //            int c= a/b;
         } catch (ArithmeticException e){
             System.out.println(e.getMessage());
+            // more strict exception should place first
+            // order is important
+        } catch (Exception e){
+            System.out.println("Other exception handle here");
         } finally {
             System.out.println("Runs in every case");
         }
