@@ -14,10 +14,19 @@ public class Main {
 //        list.delete(1);
 //        list.display();
 
-        DLL list= new DLL();
-        list.insertFirst(44);
-        list.insertFirst(22);
-        list.insert(22,33);
+//        DLL list= new DLL();
+//        list.insertFirst(44);
+//        list.insertFirst(22);
+//        list.insert(22,33);
+//        list.display();
+
+        CLL list = new CLL();
+        list.insert(22);
+        list.insert(33);
+        list.insert(44);
+        list.insert(55);
+        list.display();
+        list.delete(33);
         list.display();
     }
 }
