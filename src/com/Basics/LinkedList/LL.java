@@ -51,6 +51,20 @@ public class LL {
         size++;
     }
 
+    // Insert Using Recursion
+    public void insertR(int val, int index){
+        head=insertR(val,index,head);
+    }
+    private Node insertR(int val, int index , Node node){
+        if (index == 0) {
+            Node temp= new Node(val,node);
+            size++;
+            return temp;
+        }
+        node.next= insertR(val,index-1,node.next);
+        return node;
+    }
+
     // get any Node by index
     public Node get(int index){
         Node node =head;
