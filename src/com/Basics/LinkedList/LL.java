@@ -147,4 +147,64 @@ public class LL {
             this.next=next;
         }
     }
+
+    // Questions
+    public void removeDuplicate(){
+        Node node = head;
+        while(node.next!=null){
+            if (node.value == node.next.value) {
+                node.next= node.next.next;
+                size--;
+            }
+            else {
+                node= node.next;
+            }
+        }
+        tail=node;
+        tail.next=null;
+    }
+
+    // Merge two Sorted Linked List
+    public static LL merge (LL first, LL second){
+        Node f= first.head;
+        Node s= second.head;
+        LL ans = new LL();
+        while (f != null && s != null) {
+            if (f.value < s.value) {
+                ans.insertLast(f.value);
+                f= f.next;
+            } else {
+                ans.insertLast(s.value);
+                s=s.next;
+            }
+        }
+        while (f != null) {
+            ans.insertLast(f.value);
+            f=f.next;
+        }
+        while (s != null) {
+            ans.insertLast(s.value);
+            s=s.next;
+        }
+        return ans;
+    }
+
+    public static void main(String[] args) {
+        LL first= new LL();
+        LL second= new LL();
+        first.insertLast(1);
+        first.insertLast(2);
+        first.insertLast(8);
+        first.insertLast(9);
+        first.insertLast(11);
+        second.insertLast(3);
+        second.insertLast(4);
+        second.insertLast(7);
+        second.insertLast(10);
+        second.insertLast(12);
+        second.insertLast(13);
+
+        LL ans= merge(first,second);
+        ans.display();
+    }
 }
