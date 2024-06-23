@@ -240,6 +240,26 @@ public class LL {
         tail.next=null;
     }
 
+    // In place reversal
+    private Node reverseList(Node head) {
+        if(head == null){
+            return head;
+        }
+        Node previous= null;
+        Node present = head;
+        Node next = present.next;
+        while(present!=null){
+            present.next= previous;
+            previous = present;
+            present = next;
+            if(next!= null){
+                next= next.next;
+            }
+        }
+        return previous;
+
+    }
+
     public static void main(String[] args) {
         LL first= new LL();
         LL second= new LL();
