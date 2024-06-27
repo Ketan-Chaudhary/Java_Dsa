@@ -1,7 +1,7 @@
 package com.Basics.Stack_Queue;
 
 public class CircularQueue {
-    private int[] data;
+    protected int[] data;
     private static final int DEFAULT_SIZE= 10;
     int end =0;
     int front=0;
