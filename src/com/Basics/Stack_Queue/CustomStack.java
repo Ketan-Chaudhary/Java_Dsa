@@ -3,7 +3,7 @@ package com.Basics.Stack_Queue;
 import java.util.Deque;
 
 public class CustomStack {
-    private int[] data;
+    protected int[] data;
     private static final int DEFAULT_SIZE= 10;
     int ptr=-1;
 
@@ -38,14 +38,14 @@ public class CustomStack {
         return data[ptr];
     }
 
-    private boolean isFull() {
+    public boolean isFull() {
         if (ptr== data.length-1){
             return true;
         }
         return false;
     }
 
-    private boolean isEmpty(){
+    public boolean isEmpty(){
         return ptr ==-1;
     }
 }
