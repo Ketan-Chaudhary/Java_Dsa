@@ -24,16 +24,16 @@ public class CustomStack {
         return true;
     }
 
-    public int pop() throws Exception {
+    public int pop() throws CustomStackException {
         if(isEmpty()){
-            throw new Exception("Can't pop from an empty stack");
+            throw new CustomStackException("Can't pop from an empty stack");
         }
         return data[ptr--];
     }
 
-    public int peek() throws Exception{
+    public int peek() throws CustomStackException{
         if (isEmpty()){
-            throw new Exception("Can't get the element from empty stack");
+            throw new CustomStackException("Can't get the element from empty stack");
         }
         return data[ptr];
     }
