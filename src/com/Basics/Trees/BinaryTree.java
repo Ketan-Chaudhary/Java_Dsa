@@ -70,4 +70,45 @@ public class BinaryTree {
         prettyDisplay(node.left, level + 1);
     }
 
+    // Traversal Methods
+    // 1. Pre-order: N->L->R
+    // 2. In-order: L->N->R
+    // 3. Post-order: L->R->N
+
+    // Pre order
+    public void preOrder(){
+        preOrder(root);
+    }
+    private void preOrder(Node node){
+        if (node == null) {
+            return;
+        }
+        System.out.println(node.value);
+        preOrder(node.left);
+        preOrder(node.right);
+
+        // Post-order
+    } public void postOrder(){
+        postOrder(root);
+    }
+    private void postOrder(Node node){
+        if (node == null) {
+            return;
+        }
+        postOrder(node.left);
+        postOrder(node.right);
+        System.out.println(node.value);
+
+        // In order
+    } public void inOrder(){
+        inOrder(root);
+    }
+    private void inOrder(Node node){
+        if (node == null) {
+            return;
+        }
+        inOrder(node.left);
+        System.out.println(node.value);
+        inOrder(node.right);
+    }
 }
