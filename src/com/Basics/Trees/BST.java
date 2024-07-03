@@ -43,6 +43,19 @@ public class BST {
         }
     }
 
+    public void populateSorted(int[] arr){
+        populatedSorted(arr,0,arr.length);
+    }
+    private void populatedSorted(int[] arr, int start,int end){
+        if (start >= end) {
+            return;
+        }
+        int mid = (start+end)/2;
+        this.insert(arr[mid]);
+        populatedSorted(arr,start,mid);
+        populatedSorted(arr,mid+1,end);
+    }
+
     public void display(){
         display(this.root,"Root Node :");
     }
