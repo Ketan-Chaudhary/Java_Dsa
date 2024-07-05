@@ -72,7 +72,7 @@ public class BinaryTree {
 
     // Traversal Methods
     // 1. Pre-order: N->L->R
-    // 2. In-order: L->N->R
+    // 2. In-order: 1L->N->R
     // 3. Post-order: L->R->N
 
     // Pre order
