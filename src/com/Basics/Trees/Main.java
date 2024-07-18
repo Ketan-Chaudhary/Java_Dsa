@@ -16,9 +16,16 @@ public class Main {
 //        tree.populateSorted(sorted);
 //        tree.display();
 
-        AVL tree = new AVL();
-        int[] arr={1,2,3,4,5,6,7,8};
-        tree.populate(arr);
+//        AVL tree = new AVL();
+//        int[] arr={1,2,3,4,5,6,7,8};
+//        tree.populate(arr);
+//        tree.display();
+        int[] arr = {3, 8, 6, 7, -2, -8, 4, 9};
+        SegmentTree tree = new SegmentTree(arr);
+//        tree.display();
+//        System.out.println(tree.query(0,7));
+        tree.update(0,0);
         tree.display();
+
     }
 }
