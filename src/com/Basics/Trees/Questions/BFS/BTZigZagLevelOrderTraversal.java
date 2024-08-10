@@ -18,7 +18,7 @@ public class BTZigZagLevelOrderTraversal {
         Deque<TreeNode> queue = new LinkedList<>();
         queue.add(root);
 
-        Boolean reverse = false;
+        boolean reverse = false;
 
         while (!queue.isEmpty()) {
             int levelSize = queue.size();
