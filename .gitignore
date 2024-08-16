@@ -27,3 +27,9 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### iml ###
+Java_Dsa.iml
+
+### .idea ###
+.idea
