@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
 
-public class PathExistsAtAnyNode {
+public class PathExistsAtAnyNodeI {
     // sum path from any node
     int countPaths(TreeNode node , int sum){
         List<Integer> path = new ArrayList<>();
