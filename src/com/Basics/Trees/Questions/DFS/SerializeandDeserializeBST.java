@@ -11,7 +11,7 @@ public class SerializeandDeserializeBST {
 
     public List<String> serialize(TreeNode node){
         List<String> list = new ArrayList<>();
-        helper(node.list);
+        helper(node ,list);
         return list;
     }
     void helper(TreeNode node, List<String> list){
